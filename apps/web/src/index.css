@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 15%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+    
+    --primary: 220 60% 50%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 330 70% 75%;
+    --secondary-foreground: 0 0% 20%;
+    
+    --muted: 220 15% 85%;
+    --muted-foreground: 0 0% 45%;
+    
+    --accent: 330 70% 75%;
+    --accent-foreground: 0 0% 20%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 90%;
+    --input: 0 0% 100%;
+    --ring: 220 60% 50%;
+    
+    --radius: 0.75rem;
+  }
+  
+  .dark {
+    /* Forçando as mesmas cores para manter o tema light clean/pastel, 
+       mas se quiser dark mode no futuro, ajuste aqui */
+    --background: 0 0% 15%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 18%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 18%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 220 60% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 330 70% 75%;
+    --secondary-foreground: 0 0% 20%;
+    --muted: 220 15% 25%;
+    --muted-foreground: 0 0% 75%;
+    --accent: 330 70% 75%;
+    --accent-foreground: 0 0% 20%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 220 60% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: "DM Sans", sans-serif;
+    overflow-x: clip;
+    min-height: 100vh;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .bg-soft-gradient {
+    background: linear-gradient(135deg, #F5E6F0 0%, #E8F0F8 100%);
+  }
+}
