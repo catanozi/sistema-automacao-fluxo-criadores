@@ -325,7 +325,6 @@ Durante o desenvolvimento deste projeto, foram aplicados conceitos de:
 * consumo e integração com APIs;
 * automação de processos com n8n;
 * autenticação e persistência de dados com PocketBase;
-* leitura e tratamento de planilhas Excel;
 * integração com WhatsApp Cloud API;
 * organização de fluxo assíncrono de mensagens;
 * boas práticas de versionamento e segurança no GitHub.
@@ -340,7 +339,6 @@ Durante o desenvolvimento deste projeto, foram aplicados conceitos de:
 * Melhorar tratamento de erros no n8n
 * Criar tela de configuração da API no painel
 * Publicar aplicação em ambiente de produção
-* Adicionar prints e demonstração em vídeo ao README
 
 ---
 
